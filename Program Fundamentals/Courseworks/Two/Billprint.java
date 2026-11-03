@@ -101,6 +101,85 @@ class Billprint{
 		System.out.println("|                           +-----------------+--------------------+");
 		System.out.printf("|                           |  Price          |    %-16.2f|\n",price);
 		System.out.println("+---------------------------+-----------------+--------------------+");
+		
+		System.out.println();
+		System.out.print("Enter the amount :");
+		int Cash =input.nextInt();
+		int Change = Cash - (int)price;
+		System.out.println();
+		System.out.println("+----------------------+------------------+");
+		System.out.printf("|   Net Amount         |   %-15.1f|\n",price);
+		System.out.println("+----------------------+------------------+");
+		System.out.printf("|   Cash               |   %-15d|\n",Cash);
+		System.out.println("+----------------------+------------------+");
+		System.out.printf("|   Change             |   %-15d|\n",Change);
+		System.out.println("+----------------------+------------------+");
+		
+		System.out.println();
+		
+		int Rs5000, Rs2000,Rs1000,Rs500,Rs100,Rs50,Rs20,Rs10,Rs5,Rs2,Rs1;
+		
+		Rs5000 = Change / 5000;
+		Change = Change % 5000;
+		Rs2000 = Change / 2000;
+		Change = Change % 2000;
+		Rs1000 = Change / 1000;
+		Change = Change % 1000;
+		Rs500 = Change / 500;
+		Change = Change % 500;
+		Rs100 = Change / 100;
+		Change = Change % 100;
+		Rs50 = Change / 50;
+		Change = Change % 50;
+		Rs20 = Change / 20;
+		Change = Change % 20;
+		Rs10 = Change / 10;
+		Change = Change % 10;
+		Rs5 = Change / 5;
+		Change = Change % 5;
+		Rs2 = Change / 2;
+		Change = Change % 2;
+		Rs1 = Change;
+		
+		int Notes = Rs5000 + Rs2000 + Rs1000 + Rs500 + Rs100 + Rs50 +Rs20;
+		int Coins = Rs10 + Rs5 + Rs2 + Rs1;
+
+		System.out.println("+-------------------+--------------+");
+		System.out.println("|    Value          |      No      |");
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.5000        |     %-9d|\n",Rs5000);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.2000        |     %-9d|\n",Rs2000);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.1000        |     %-9d|\n",Rs1000);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.500         |     %-9d|\n",Rs500);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.100         |     %-9d|\n",Rs100);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.50          |     %-9d|\n",Rs50);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.20          |     %-9d|\n",Rs20);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.10          |     %-9d|\n",Rs10);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.5           |     %-9d|\n",Rs5);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.2           |     %-9d|\n",Rs2);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    Rs.1           |     %-9d|\n",Rs1);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    No of Notes    |     %-9d|\n",Notes);
+		System.out.println("+-------------------+--------------+");
+		System.out.printf("|    No of Coins    |     %-9d|\n",Coins);
+		System.out.println("+-------------------+--------------+");
+		
+		System.out.println();
+		System.out.println();
+		
+		System.out.println("----------------------------------------");
+		System.out.println("     THANK YOU FOR SHOPPING WITH US     ");
+		System.out.println("----------------------------------------");	
 	
 
 		
